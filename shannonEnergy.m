@@ -30,4 +30,5 @@ ShannonEnergy_d_conv = conv(ShannonEnergy_d,rectangular_impulse);
 % original
 signalOut = ShannonEnergy_d_conv(impulse_length:end-impulse_length+1);
 
+% normalizada
 signalOut = signalOut./max(abs(signalOut));
